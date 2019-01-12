@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Tic Tac Toe Game
+{% endblock %}
+
+
+  {% block body %}
+  <h1 align='center'>Welcome to Tic Tac Toe!</h1>
+  <h2 align='center'>Let's get started!</h2>
+  <h3 align='center'></h3>
+  <p><a id='rb' role="button" class='btn btn-primary'>Restart!</a></p>
+
+  <table align='center' class="tt">
+    <tr>
+      <td><button type="button"></button></td>
+      <td><button type="button"></button></td>
+      <td><button type="button"></button></td>
+    </tr>
+    <tr>
+      <td><button type="button"></button></td>
+      <td><button type="button"></button></td>
+      <td><button type="button"></button></td>
+    </tr>
+    <tr>
+      <td><button type="button"></button></td>
+      <td><button type="button"></button></td>
+      <td><button type="button"></button></td>
+    </tr>
+  </table>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="{% static 'js/ttt.js' %}"></script>
+{% endblock %}

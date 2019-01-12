@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Projects Page
+{% endblock %}
+
+{% block body %}
+<h3>Check out these cool game projects:</h3>
+<br>
+<ul class="customfont">
+  <li><a href="{% url 'c4' %}">Connect Four</a></li>
+  <hr>
+  <li><a href="{% url 'ttt' %}">Tic Tac Toe</a></li>
+  <hr>
+</ul>
+{% endblock %}
